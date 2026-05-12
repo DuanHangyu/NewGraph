@@ -354,13 +354,53 @@ Newgraph/
 
 ---
 
-## 文档
+## Neo4j 云端配置指南（AuraDB）
 
-| 文档 | 说明 |
-|------|------|
-| [API 接口文档](docs/API.md) | 完整请求/响应示例 |
-| [架构文档](docs/ARCHITECTURE.md) | 代码架构、数据流、LLM 提示工程 |
-| [AuraDB 配置](docs/AURADB_SETUP.md) | Neo4j 云托管配置指南 |
+推荐使用 [Neo4j AuraDB](https://neo4j.com/cloud/aura/) 免费层作为图数据库，无需本地安装。
+
+### 1. 创建 AuraDB 实例
+
+1. 访问 [https://neo4j.com/cloud/aura/](https://neo4j.com/cloud/aura/)，注册/登录 Neo4j 账号
+2. 点击 **Create Instance**，选择 **Free** 方案
+3. 设置实例名称（如 `newgraph`），选择区域（推荐选离你最近的）
+4. 等待实例创建完成（约 1-2 分钟）
+
+### 2. 获取连接信息
+
+实例创建成功后，页面会显示连接信息：
+
+| 参数 | 示例值 |
+|------|--------|
+| **Connection URI** | `neo4j+s://xxxxxxxx.databases.neo4j.io` |
+| **Username** | `neo4j` |
+| **Password** | 创建时生成的一次性密码，请立即保存 |
+
+> 密码仅在创建时显示一次，务必妥善保存。如遗失需重置密码。
+
+### 3. 配置项目
+
+将连接信息填入项目根目录的 `.env` 文件：
+
+```env
+NEO4J_URI=neo4j+s://xxxxxxxx.databases.neo4j.io
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=你的密码
+```
+
+### 4. 验证连接
+
+启动后端后，访问健康检查接口确认连接正常：
+
+```bash
+curl http://localhost:5001/health
+```
+
+### 注意事项
+
+- **免费层限制**：200K 节点 / 400K 关系，足够大部分使用场景
+- **连接方式**：URI 以 `neo4j+s://` 开头表示使用加密连接，无需额外配置
+- **网络延迟**：云端数据库可能存在一定延迟，首次查询可能稍慢
+- **暂停与恢复**：免费实例长时间不用会自动暂停，访问时自动恢复（约 30 秒）
 
 ---
 
