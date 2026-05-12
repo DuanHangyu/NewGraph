@@ -49,6 +49,9 @@ htmlcov/
 mydoc/
 mytest/
 
+# AI 助手配置
+CLAUDE.md
+
 # 日志文件
 backend/logs/
 *.log
