@@ -49,8 +49,8 @@ class Neo4jManager:
                 Config.NEO4J_URI,
                 auth=(Config.NEO4J_USER, Config.NEO4J_PASSWORD),
                 max_connection_lifetime=300,
-                max_connection_pool_size=50,
-                connection_acquisition_timeout=30,
+                max_connection_pool_size=5,
+                connection_acquisition_timeout=120,
                 connection_timeout=30,
                 max_transaction_retry_time=60,
                 resolver=None
