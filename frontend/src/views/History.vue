@@ -8,7 +8,7 @@
         <router-link to="/" class="nav-link">
           {{ $t('nav.home') }}
         </router-link>
-        <a href="https://github.com/666ghj/Evolith" target="_blank" class="github-link">
+        <a href="https://github.com/DuanHangyu" target="_blank" class="github-link">
           {{ $t('nav.visitGithub') }} <span class="arrow">↗</span>
         </a>
       </div>
