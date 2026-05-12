@@ -65,6 +65,17 @@ https://github.com/user-attachments/assets/eca9f416-c968-408e-9859-447a495a6ff9
 
 <img src="images/using2.png" alt="图谱问答联动" />
 
+<table>
+  <tr>
+    <td align="center"><b>数据集管理</b></td>
+    <td align="center"><b>项目历史</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/using3.png" alt="数据集管理" width="100%" /></td>
+    <td><img src="images/using4.png" alt="项目历史" width="100%" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 系统架构
