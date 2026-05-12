@@ -55,26 +55,15 @@ D3.js 力导向布局实时渲染知识图谱，支持丰富的交互操作。
 
 ## 界面展示
 
-<table>
-  <tr>
-    <td align="center"><b>知识图谱可视化</b></td>
-    <td align="center"><b>图谱问答联动</b></td>
-  </tr>
-  <tr>
-    <td><img src="images/using.png" alt="图谱可视化" width="100%" /></td>
-    <td><img src="images/using2.png" alt="图谱问答" width="100%" /></td>
-  </tr>
-  <tr>
-    <td align="center"><b>数据集管理</b></td>
-    <td align="center"><b>项目历史</b></td>
-  </tr>
-  <tr>
-    <td><img src="images/using3.png" alt="数据集管理" width="100%" /></td>
-    <td><img src="images/using4.png" alt="项目历史" width="100%" /></td>
-  </tr>
-</table>
+https://github.com/user-attachments/assets/eca9f416-c968-408e-9859-447a495a6ff9
 
-> 演示视频：[`images/知识图谱问答.mp4`](images/知识图谱问答.mp4)
+**知识图谱可视化**
+
+<img src="images/using.png" alt="知识图谱可视化" />
+
+**图谱问答联动**
+
+<img src="images/using2.png" alt="图谱问答联动" />
 
 ---
 
